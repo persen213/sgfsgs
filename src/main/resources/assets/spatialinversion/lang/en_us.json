@@ -1,0 +1,20 @@
+{
+  "item.spatialinversion.spatial_factor": "Spatial Factor",
+  "spatialinversion.ability.spatial_manipulation": "Spatial Manipulation",
+  "spatialinversion.skill.spatial_link": "Spatial Link",
+  "spatialinversion.skill.spatial_link.desc": "Create two connected spatial anchors. Projectiles and items passing through one emerge from the other.",
+  "spatialinversion.skill.vector_redirect": "Vector Redirect",
+  "spatialinversion.skill.vector_redirect.desc": "Open a temporary portal in front of you that redirects incoming projectiles in your current look direction.",
+  "spatialinversion.skill.spatial_exchange": "Spatial Exchange",
+  "spatialinversion.skill.spatial_exchange.desc": "Swap positions with a targeted entity. Both destinations must be safe.",
+  "spatialinversion.skill.distortion_field": "Distortion Field",
+  "spatialinversion.skill.distortion_field.desc": "Create a field around you that bends the trajectories of incoming projectiles.",
+  "spatialinversion.skill.inversion_strike": "Inversion Strike",
+  "spatialinversion.skill.inversion_strike.desc": "Charge a spatial attack that emerges from an unexpected angle near your target. Press again to release early.",
+  "spatialinversion.skill.fold_step": "Fold Step",
+  "spatialinversion.skill.fold_step.desc": "Create two linked portals and instantly travel between them.",
+  "spatialinversion.skill.spatial_cage": "Spatial Cage",
+  "spatialinversion.skill.spatial_cage.desc": "Surround an area with four connected portals that redirect projectiles and hinder escape.",
+  "spatialinversion.skill.absolute_inversion": "Absolute Inversion",
+  "spatialinversion.skill.absolute_inversion.desc": "Ultimate ability: Create two massive spatial surfaces that reverse the spatial relationship between their locations."
+}

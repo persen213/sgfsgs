@@ -1,0 +1,20 @@
+{
+  "item.spatialinversion.spatial_factor": "空間因子",
+  "spatialinversion.ability.spatial_manipulation": "空間操作",
+  "spatialinversion.skill.spatial_link": "空間連結",
+  "spatialinversion.skill.spatial_link.desc": "2つの空間アンカーを連結する。一方を通過した投射物やアイテムは他方から出現する。",
+  "spatialinversion.skill.vector_redirect": "ベクトル転向",
+  "spatialinversion.skill.vector_redirect.desc": "前方に一時的なポータルを開き、飛来する投射物を現在の視線方向へ転向させる。",
+  "spatialinversion.skill.spatial_exchange": "空間交換",
+  "spatialinversion.skill.spatial_exchange.desc": "標的としたエンティティと位置を交換する。双方の着地点が安全でなければならない。",
+  "spatialinversion.skill.distortion_field": "歪みフィールド",
+  "spatialinversion.skill.distortion_field.desc": "自身の周囲にフィールドを展開し、接近する投射物の軌道を曲げる。",
+  "spatialinversion.skill.inversion_strike": "反転撃",
+  "spatialinversion.skill.inversion_strike.desc": "標的付近の意外な角度から出現する空間攻撃をチャージする。もう一度押すと早期発動。",
+  "spatialinversion.skill.fold_step": "空間折畳",
+  "spatialinversion.skill.fold_step.desc": "2つの連結したポータルを生成し、その間を瞬時に移動する。",
+  "spatialinversion.skill.spatial_cage": "空間檻",
+  "spatialinversion.skill.spatial_cage.desc": "エリアを4つの連結ポータルで囲み、投射物を転向させ脱出を妨げる。",
+  "spatialinversion.skill.absolute_inversion": "絶対反転",
+  "spatialinversion.skill.absolute_inversion.desc": "究極技：2つの巨大な空間面を生成し、それらの位置関係を逆転させる。"
+}

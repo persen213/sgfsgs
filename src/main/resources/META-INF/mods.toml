@@ -1,0 +1,39 @@
+modLoader="javafml"
+loaderVersion="[47,48)"
+license="GPLv3 (the new parts written by the Spatial Inversion add-on project; see LICENSE and NOTICE.md in this JAR)"
+
+[[mods]]
+modId="spatialinversion"
+version="${version}"
+displayName="Spatial Inversion Esper Add-on"
+description='''
+A Re:AcademyCraft add-on adding the "Spatial Inversion" esper category with 8 skills.
+Playstyle: offense, defense, mobility, battlefield control.
+
+Skills:
+1. Spatial Link (TOGGLE) - Two connected anchors; projectiles and items pass between them.
+2. Vector Redirect (INSTANT) - Temporary opening redirects incoming projectiles.
+3. Spatial Exchange (INSTANT) - Swap position with an eligible entity.
+4. Distortion Field (INSTANT) - Field bends incoming projectile trajectories.
+5. Inversion Strike (TOGGLE) - Concentrated spatial attack through an opening.
+6. Fold Step (INSTANT) - Two openings and travel between them.
+7. Spatial Cage (TOGGLE) - Four connected openings around an area, restrict escape routes.
+8. Absolute Inversion (INSTANT, Ultimate) - Two enormous spatial surfaces reverse spatial relationship.
+
+All skills are server-authoritative, client-rendered with zero particles (pure geometry rendering).
+Configurable damage, energy, range, cooldowns. Dedicated-server safe.
+'''
+
+[[dependencies.spatialinversion]]
+modId="academy"
+mandatory=true
+versionRange="[1.5.0,1.6)"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.spatialinversion]]
+modId="forge"
+mandatory=true
+versionRange="[47.4.10,48)"
+ordering="NONE"
+side="BOTH"

@@ -1,0 +1,60 @@
+// Spatial Inversion Esper Add-on for Re:AcademyCraft 1.5.0
+// Minecraft 1.20.1 / Forge 47.4.10 / Java 17
+plugins {
+    id 'java'
+    id 'net.minecraftforge.gradle' version '[6.0,6.2)'
+}
+
+group = 'io.spatialinversion.addon'
+version = '1.0.0'
+base { archivesName = 'spatial-inversion-addon-forge-1.20.1' }
+
+java { toolchain.languageVersion = JavaLanguageVersion.of(17) }
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+    options.release = 17
+}
+
+minecraft {
+    mappings channel: 'official', version: '1.20.1'
+    copyIdeResources = true
+    runs {
+        client {
+            workingDirectory project.file('run')
+            mods { spatialinversion { source sourceSets.main } }
+        }
+        server {
+            workingDirectory project.file('run')
+            args '--nogui'
+            mods { spatialinversion { source sourceSets.main } }
+        }
+    }
+}
+
+repositories {
+    // Re:AcademyCraft API JAR committed in libs/ folder
+    flatDir { dirs 'libs' }
+}
+
+dependencies {
+    minecraft 'net.minecraftforge:forge:1.20.1-47.4.10'
+    // API JAR is deobfuscated (dev names). Our JAR does NOT include API classes.
+    // At runtime, Re:AcademyCraft mod (mod id "academy") must be present on both sides.
+    implementation fg.deobf('blank:re-academycraft-forge-1.20.1:1.5.0:api')
+}
+
+tasks.named('processResources', ProcessResources) {
+    filteringCharset = 'UTF-8'
+    inputs.property 'version', project.version
+    filesMatching('META-INF/mods.toml') { expand 'version': project.version }
+}
+
+// GPLv3. JAR includes LICENSE and NOTICE.md from SDK.
+tasks.named('jar', Jar) {
+    manifest {
+        attributes 'Implementation-Title': 'Spatial Inversion Esper Add-on',
+                   'Implementation-Version': project.version
+    }
+    finalizedBy 'reobfJar'
+}
